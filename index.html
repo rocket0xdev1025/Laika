@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Asteroid</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<style>
+		body {
+			opacity: 0;
+			visibility: hidden;
+			transition:
+				opacity 0.2s ease 0.2s,
+				visibility 0.2s ease 0.2s;
+		}
+
+		.loaded body {
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20250130173418" />
+	<link rel="icon" href="/logo.png" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="menu-open-bg"></div>
+		<header class="header">
+			<div class="header__container">
+				<a href="../" class="header__logo"><img src="img/logo.png" alt="Logo Asteroid" /></a>
+				<div class="header__right">
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" data-goto=".about" data-goto-top="120" class="menu__link">About</a>
+								</li>
+								<li class="menu__item menu__item--decor"></li>
+								<li class="menu__item">
+									<a href="#" data-goto=".how" data-goto-top="140" class="menu__link">HOW To BUY</a>
+								</li>
+								<li class="menu__item menu__item--decor"></li>
+								<li class="menu__item">
+									<a href="#" data-goto=".tokenomics" data-goto-top="60" class="menu__link">Asteromics</a>
+								</li>
+								<li class="menu__item menu__item--decor"></li>
+								<li class="menu__item">
+									<a href="https://x.com/glennbeck/status/2044889292225311088" target="_blank" class="menu__link">Narrative</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<a href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0xcomingsoon" target="_blank" class="header__buy" data-da=".menu__body, 767.98">
+						<span>Buy Now</span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__bg">
+					<img src="img/hero/bg.png" alt="BG" />
+				</div>
+				<div class="hero__stars"></div>
+				<div class="hero__container">
+					<div class="hero__content">
+						<h1 class="hero__title">Asteroid</h1>
+						<div class="hero__text">First Shiba In Space</div>
+						<div class="hero__actions">
+							<a href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0xcomingsoon" target="_blank" class="hero__buy">
+								<span>Buy Now</span>
+							</a>
+							<div class="hero__social">
+								<a href="https://x.com/AsteroidInu_x" target="_blank" class="hero__social-item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+										<path d="M19.4 0.624573H23.0806L15.0406 9.83714L24.5 22.3754H17.0943L11.2897 14.7726L4.65543 22.3754H0.971429L9.57029 12.5183L0.5 0.626287H8.09429L13.3331 7.57429L19.4 0.624573ZM18.1057 20.1674H20.1457L6.98 2.71772H4.79257L18.1057 20.1674Z" fill="white" />
+									</svg>
+								</a>
+								<a href="https://t.me/AsteroidInu" target="_blank" class="hero__social-item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M20.2767 4.92997C20.5238 4.82596 20.7943 4.79008 21.0599 4.82608C21.3256 4.86208 21.5768 4.96863 21.7873 5.13465C21.9979 5.30067 22.1601 5.52008 22.257 5.77005C22.354 6.02002 22.3822 6.29141 22.3387 6.55597L20.0707 20.313C19.8507 21.64 18.3947 22.401 17.1777 21.74C16.1597 21.187 14.6477 20.335 13.2877 19.446C12.6077 19.001 10.5247 17.576 10.7807 16.562C11.0007 15.695 14.5007 12.437 16.5007 10.5C17.2857 9.73897 16.9277 9.29997 16.0007 9.99997C13.6987 11.738 10.0027 14.381 8.78065 15.125C7.70265 15.781 7.14065 15.893 6.46865 15.781C5.24265 15.577 4.10565 15.261 3.17765 14.876C1.92365 14.356 1.98465 12.632 3.17665 12.13L20.2767 4.92997Z" fill="white" />
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="hero__image">
+						<img src="img/hero/01.png" alt="Asteroid" />
+					</div>
+				</div>
+			</section>
+			<div class="page__about-how about-how">
+				<div class="about-how__bg">
+					<img src="img/about/bg.png" alt="BG" />
+					<img src="img/about/bottom.png" alt="BG" />
+					<span id="rocket"></span>
+				</div>
+				<section class="about-how__about about" data-watch="navigator">
+					<div class="about__container">
+						<div class="about__content" data-watch-threshold="0.75" data-watch-once data-watch>
+							<h2 class="about__title">About</h2>
+							<div class="about__text">
+								Drawn by a 12-year-old dreamer named Olivia "Liv" Perrotto.
+								Flown to orbit aboard Polaris Dawn. Now soaring on Ethereum.
+								<blockquote class="twitter-tweet"><p lang="en" dir="ltr">At 15 years old, Liv Perrotto’s biggest dream was to meet <a href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">@elonmusk</a>. She had even written out a list of questions to ask him. Her mother <a href="https://twitter.com/rebeccaperrotto?ref_src=twsrc%5Etfw">@rebeccaperrotto</a> told me that just days before she passed away from cancer, she had a chance to speak with Elon, but she was too tired and… <a href="https://t.co/zTRMreMFhM">pic.twitter.com/zTRMreMFhM</a></p>&mdash; Glenn Beck (@glennbeck) <a href="https://twitter.com/glennbeck/status/2044889292225311088?ref_src=twsrc%5Etfw">April 16, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="about-how__info pl-func pr-func">
+					<h3>Asteroid Shiba</h3>
+					<p>
+						 the zero-g indicator plushie was the first Shiba In Space.
+					</p>
+				</div>
+				<section class="about-how__how how" data-watch="navigator">
+					<div class="how__container">
+						<div class="how__image">
+							<img src="img/about/01.png" alt="Asteroid" />
+						</div>
+						<div class="how__content">
+							<h2 class="how__title" data-watch-threshold="0.85" data-watch-once data-watch>
+								How <br />
+								to Buy
+							</h2>
+							<div class="how__steps">
+								<div class="how__step" data-watch-threshold="0.85" data-watch-once data-watch>
+									<div class="how__step-num">1.</div>
+									<div class="how__step-text">
+										Download and set up Metamask Wallet on your mobile device
+										or browser.
+									</div>
+								</div>
+								<div class="how__step" data-watch-threshold="0.85" data-watch-once data-watch>
+									<div class="how__step-num">2.</div>
+									<div class="how__step-text">
+										Purchase <span>$</span>ETH from a crypto exchange like
+										Binance or Coinbase, or bridge it to the Ethereum network.
+									</div>
+								</div>
+								<div class="how__step" data-watch-threshold="0.85" data-watch-once data-watch>
+									<div class="how__step-num">3.</div>
+									<div class="how__step-text">
+										Send the <span>$</span>ETH you purchased (or bridged) to
+										your Metamask Wallet address.
+									</div>
+								</div>
+								<div class="how__step" data-watch-threshold="0.85" data-watch-once data-watch>
+									<div class="how__step-num">4.</div>
+									<div class="how__step-text">
+										Visit Uniswap, connect your wallet, and swap
+										your <span>$</span>ETH for <span>$</span>ASTEROID.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<section class="page__roadmap roadmap">
+				<div class="roadmap__bg">
+					<img src="img/roadmap/bg.png" alt="BG" />
+				</div>
+				<div class="roadmap__container">
+					<div class="roadmap__content">
+						<blockquote class="twitter-tweet"><p lang="en" dir="ltr">is this how she spelled it <a href="https://twitter.com/rebeccaperrotto?ref_src=twsrc%5Etfw">@rebeccaperrotto</a> if it is we should name the mascot how she did in remembrance of her ❤️ <a href="https://t.co/c5bIkKOcd1">pic.twitter.com/c5bIkKOcd1</a></p>&mdash; 4Y42 (@4Y42m) <a href="https://twitter.com/4Y42m/status/2044992062676767166?ref_src=twsrc%5Etfw">April 17, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+					<div class="roadmap__content">
+						<h2 class="roadmap__title" data-watch-threshold="0.95" data-watch>
+							<img src="img/roadmap/title.png" alt="Roadmap" />
+							<img src="img/roadmap/rocket.png" alt="Rocket" />
+						</h2>
+						<div class="roadmap__list">
+							<div class="roadmap__item" data-watch-threshold="0.85" data-watch-once data-watch>
+								<h3>A Rocket Scientist in the Making</h3>
+								<p>
+									In Williamsport’s hills, Liv dreamed of space. A “rocket scientist” at heart, she loved anime art and helping others. At 10, she faced undifferentiated sarcoma with courage, humor, and joy.
+								</p>
+							</div>
+							<div class="roadmap__item" data-watch-threshold="0.85" data-watch-once data-watch>
+								<h3>The Sketch That Changed Everything</h3>
+								<p>
+									Polaris Dawn, led by Jared Isaacman and powered by SpaceX, invited Liv to design a zero-G indicator. In 30 minutes, she drew a Shiba Inu astronaut inspired by Floki, naming it “Astroid.”
+								</p>
+							</div>
+							<div class="roadmap__item" data-watch-threshold="0.85" data-watch-once data-watch>
+								<h3>Astroid Reaches Orbit</h3>
+								<p>
+									Astroid flew on Polaris Dawn, floating in zero gravity and bringing Liv pure joy. Replica plushies sold worldwide, raising millions—at her request—for St. Jude Children's Research Hospital.
+								</p>
+							</div>
+							<div class="roadmap__item" data-watch-threshold="0.85" data-watch-once data-watch>
+								<h3>Her Final Dream</h3>
+								<p>
+									Even as her health faded, Liv wished to meet Elon Musk and ask 8 questions, ending with: make Astroid SpaceX’s mascot? Days before she passed, he called. On Apr 16, 2026, her mom Rebecca shared it with Glenn Beck.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__tokenomics-join tokenomics-join">
+				<div class="tokenomics-join__bg">
+					<img src="img/tokenomics/bg.png" alt="Image" />
+				</div>
+				<section class="tokenomics-join__tokenomics tokenomics" data-watch="navigator">
+					<div class="tokenomics__title">
+						<img src="img/tokenomics/Title.png" alt="LaikaNomics" />
+						<img src="img/tokenomics/Title-mob.png" alt="LaikaNomics" />
+					</div>
+					<div class="tokenomics__container">
+						<div class="tokenomics__items">
+							<div class="tokenomics__item" data-watch-threshold="0.85" data-watch-once data-watch>
+								<span>Symbol:</span>
+								<span><span>$</span>ASTEROID</span>
+							</div>
+							<div class="tokenomics__item" data-watch-threshold="0.85" data-watch-once data-watch>
+								<span>TAX:</span>
+								<span>0/0</span>
+							</div>
+							<div class="tokenomics__item" data-watch-threshold="0.85" data-watch-once data-watch>
+								<span>Destribution:</span>
+								<span>100<span>%</span></span>
+							</div>
+							<div class="tokenomics__item" data-watch-threshold="0.85" data-watch-once data-watch>
+								<span>Liquidity Pool:</span>
+								<span>Locked</span>
+							</div>
+							<div class="tokenomics__item" data-watch-threshold="0.85" data-watch-once data-watch>
+								<span>Address:</span>
+								<span>0xcomingsoon</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="tokenomics-join__join join" data-watch="navigator">
+					<div class="join__container">
+						<div class="join__image">
+							<img src="img/tokenomics/01.png" alt="Laika" />
+						</div>
+						<div class="join__content">
+							<h2 class="join__title" data-watch-threshold="0.85" data-watch-once data-watch>
+								Join us
+							</h2>
+							<h4 class="join__sub-title" data-watch-threshold="0.85" data-watch-once data-watch>
+								Be Part of History
+							</h4>
+							<div class="join__actions" data-watch-threshold="0.85" data-watch-once data-watch>
+								<a href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0xcomingsoon" target="_blank" class="join__buy">
+									<span>Buy Now</span>
+								</a>
+								<div class="join__social">
+									<a href="https://x.com/AsteroidInu_x" target="_blank" class="join__social-item">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+											<path d="M19.4 0.624573H23.0806L15.0406 9.83714L24.5 22.3754H17.0943L11.2897 14.7726L4.65543 22.3754H0.971429L9.57029 12.5183L0.5 0.626287H8.09429L13.3331 7.57429L19.4 0.624573ZM18.1057 20.1674H20.1457L6.98 2.71772H4.79257L18.1057 20.1674Z" fill="white" />
+										</svg>
+									</a>
+									<a href="https://t.me/AsteroidInu" target="_blank" class="join__social-item">
+										<svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M18.4681 1.03247C18.7152 0.928465 18.9857 0.892593 19.2513 0.928591C19.517 0.964589 19.7682 1.07114 19.9787 1.23716C20.1893 1.40318 20.3515 1.62259 20.4484 1.87256C20.5454 2.12253 20.5736 2.39391 20.5301 2.65847L18.2621 16.4155C18.0421 17.7425 16.5861 18.5035 15.3691 17.8425C14.3511 17.2895 12.8391 16.4375 11.4791 15.5485C10.7991 15.1035 8.71606 13.6785 8.97206 12.6645C9.19206 11.7975 12.6921 8.53947 14.6921 6.60247C15.4771 5.84147 15.1191 5.40247 14.1921 6.10247C11.8901 7.84047 8.19406 10.4835 6.97206 11.2275C5.89406 11.8835 5.33206 11.9955 4.66006 11.8835C3.43406 11.6795 2.29706 11.3635 1.36906 10.9785C0.11506 10.4585 0.17606 8.73447 1.36806 8.23247L18.4681 1.03247Z" fill="white" />
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="join__bottom">
+								<div class="join__menu">
+									<a href="#" data-goto=".about" data-goto-top="120" class="join__menu-item">About</a>
+									<a href="#" data-goto=".how" data-goto-top="140" class="join__menu-item">How to buy</a>
+									<a href="#" data-goto=".tokenomics" data-goto-top="60" class="join__menu-item">laikanomics</a>
+									<a href="https://x.com/glennbeck/status/2044889292225311088" class="join__menu-item">Narrative</a>
+								</div>
+								<div class="join__bootom-social">
+									<a href="https://t.me/AsteroidInu" target="_blank" class="join__bootom-social-item">
+										<svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+											<g clip-path="url(#clip0_2009_1614)">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M40.4732 9.38532C40.9675 9.1773 41.5084 9.10556 42.0398 9.17756C42.5712 9.24955 43.0735 9.46266 43.4946 9.79469C43.9157 10.1267 44.2401 10.5655 44.434 11.0655C44.6279 11.5654 44.6843 12.1082 44.5972 12.6373L40.0612 40.1513C39.6212 42.8053 36.7092 44.3273 34.2752 43.0053C32.2392 41.8993 29.2152 40.1953 26.4952 38.4173C25.1352 37.5273 20.9692 34.6773 21.4812 32.6493C21.9212 30.9153 28.9212 24.3993 32.9212 20.5253C34.4912 19.0033 33.7752 18.1253 31.9212 19.5253C27.3172 23.0013 19.9252 28.2873 17.4812 29.7753C15.3252 31.0873 14.2012 31.3113 12.8572 31.0873C10.4052 30.6793 8.13123 30.0473 6.27523 29.2773C3.76723 28.2373 3.88923 24.7893 6.27323 23.7853L40.4732 9.38532Z" fill="#ECE6DE" />
+											</g>
+											<defs>
+												<clipPath id="clip0_2009_1614">
+													<rect width="48" height="48" fill="white" transform="translate(0.919922 0.525391)" />
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+									<a href="https://x.com/AsteroidInu_x" target="_blank" class="join__bootom-social-item">
+										<svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+											<g clip-path="url(#clip0_2009_1618)">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M44.0899 43.2754L29.095 21.4197L29.1206 21.4402L42.6407 5.77539H38.1226L27.1088 18.5254L18.3625 5.77539L6.5133 5.77539L20.5124 26.1805L20.5107 26.1788L5.74609 43.2754H10.2641L22.5089 29.0902L32.2406 43.2754H44.0899ZM16.5723 9.18447L37.6111 39.8663H34.0308L12.975 9.18447H16.5723Z" fill="#ECE6DE" />
+											</g>
+											<defs>
+												<clipPath id="clip0_2009_1618">
+													<rect width="48" height="48" fill="white" transform="translate(0.919922 0.525391)" />
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+									<a href="https://dexscreener.com/ethereum/0xcomingsoon" target="_blank" class="join__bootom-social-item">
+										<svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M29.4692 18.9369C30.6689 18.3414 32.1952 17.4644 33.7235 16.2629C34.0457 16.9293 34.0813 17.5107 33.9149 17.9801C33.7972 18.3109 33.5754 18.5988 33.2842 18.8277C32.9686 19.075 32.5742 19.2555 32.1385 19.3528C31.3117 19.5382 30.3461 19.4302 29.4692 18.9369ZM29.6772 25.04L31.2652 25.9534C28.0228 27.7632 27.1412 31.1236 26.0939 34.3964C25.047 31.1236 24.1653 27.7629 20.923 25.9534L22.511 25.04C22.8261 24.9213 23.0288 24.6144 23.0128 24.2792C22.8671 21.2139 23.6984 19.8582 24.8197 19.0074C25.2216 18.7026 25.6607 18.5496 26.0939 18.5496C26.5271 18.5496 26.9662 18.7026 27.3681 19.0074C28.4891 19.8586 29.3203 21.2139 29.175 24.2792C29.159 24.6144 29.3624 24.9213 29.6772 25.04ZM26.0943 5.02539C27.9299 5.07457 29.7702 5.4293 31.3673 6.1196C32.4733 6.59836 33.5049 7.23043 34.4396 7.98653C34.8616 8.32789 35.2091 8.65767 35.5919 9.03735C36.6242 9.07278 38.133 7.93085 38.8334 6.86233C37.6278 10.7976 32.1272 15.4446 28.3191 17.2229C28.3177 17.2222 28.3166 17.2214 28.3155 17.2208C27.6321 16.7011 26.8634 16.4411 26.0946 16.4411C25.3259 16.4411 24.5572 16.7011 23.8738 17.2208C23.8727 17.2214 23.8716 17.2225 23.8702 17.2229C20.0613 15.4446 14.5611 10.7973 13.3555 6.86233C14.0559 7.93085 15.5644 9.07315 16.5967 9.03735C16.9795 8.65803 17.327 8.32789 17.7489 7.98653C18.6833 7.23043 19.7153 6.59836 20.8213 6.1196C22.4187 5.4293 24.2587 5.07457 26.0943 5.02539ZM22.7194 18.9369C21.52 18.3414 19.9934 17.4644 18.465 16.2629C18.1429 16.9293 18.1073 17.5107 18.2733 17.9801C18.3909 18.3109 18.6128 18.5988 18.904 18.8277C19.2199 19.075 19.6143 19.2555 20.0501 19.3528C20.8769 19.5382 21.8428 19.4302 22.7194 18.9369Z" fill="#ECE6DE" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M35.3976 14.7894C36.239 13.944 36.9805 13.0081 37.5764 12.1729L37.8793 12.7402C38.8539 14.682 39.3605 16.6162 39.3605 18.7927L39.3583 22.2467L39.3764 24.037C39.4469 28.4326 40.4023 32.8795 42.5658 36.9494L38.0391 33.3146L34.8363 38.4901L31.4716 35.3359L26.0944 44.0252L20.7172 35.3363L17.3525 38.4905L14.1498 33.315L9.62305 36.9498C11.7865 32.8799 12.7416 28.4326 12.8124 24.0374L12.8305 22.247L12.8284 18.7931C12.8284 16.6162 13.3346 14.6824 14.3095 12.7406L14.612 12.1732C15.2083 13.0081 15.9494 13.944 16.7908 14.7898L16.5279 15.3333C16.0173 16.3887 15.8485 17.569 16.2461 18.6918C16.5025 19.4147 16.9702 20.0348 17.5733 20.5082C18.159 20.9677 18.8522 21.2776 19.5778 21.4403C20.0506 21.5463 20.5321 21.59 21.0107 21.5752C20.8992 22.2055 20.8501 22.8588 20.8473 23.525L16.5773 25.9809L19.8723 27.82C20.1355 27.9672 20.3865 28.1353 20.6218 28.3238C23.3383 30.7526 24.9717 37.938 26.094 41.4477C27.2165 37.938 28.8498 30.7526 31.5664 28.3238C31.8016 28.1357 32.0526 27.9672 32.3159 27.82L35.6109 25.9809L31.3408 23.525C31.3376 22.8588 31.2889 22.2055 31.1774 21.5752C31.6561 21.59 32.1375 21.5463 32.6103 21.4403C33.3358 21.2776 34.0291 20.9677 34.6148 20.5082C35.2179 20.0348 35.6857 19.4147 35.942 18.6918C36.3396 17.5694 36.1707 16.3891 35.6602 15.3333L35.3976 14.7894Z" fill="#ECE6DE" />
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<span>2026 © ALL RIGHTS RESERVED</span>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20250130173418"></script>
+	<script src="js/demo.js"></script>
+</body>
+
+</html>
